@@ -36,7 +36,11 @@ def test2_is_tachycardia(string_input, expected):
 
 @pytest.mark.parametrize("string_input,expected", [
     # Enhanced functionality - Check if letters are accidently omitted
-    ("tahycadic", True),  # One wrong letter
+    ("tahycadic", True),  # One letter omitted
+    ("tachyardi", True),  # Two letters ommitted
+    ("    aCHyardc ", False),  # Three letters ommitted
+    ("    7ach6cari  ", False),  # Two ommitted letters and two wrong lets
+    ("tachycrdic", True),  # Example provided
 ])
 def test3_is_tachycardia(string_input, expected):
     result = is_tachycardia(string_input)

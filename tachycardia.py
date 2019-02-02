@@ -26,7 +26,7 @@ def is_tachycardia(string_input):
             storage_str = storage_str + i
 
     # Logic to determine if word is close enough
-    if (len(storage_str)>= (len(compare)-2) or counter >= (len(compare)-2)):
+    if (len(storage_str) >= (len(compare)-2) or counter >= (len(compare)-2)):
         return True
     else:
         return False
