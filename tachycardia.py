@@ -1,3 +1,8 @@
+# tachycardia.py
+# Written by: Nate Watson
+# 2.1.19
+# Test if the word "tachycardic" is in user input
+
 
 def is_tachycardia(string_input):
     compare = "tachycardic"  # Word to compare strings
